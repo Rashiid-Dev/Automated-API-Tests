@@ -1,0 +1,8 @@
+﻿{
+  "name": "{Name}",
+  "jurisdictions": [
+    "{Jurisdictions}"
+  ],
+  "price": {Price},
+  "description": "{Description}"
+}

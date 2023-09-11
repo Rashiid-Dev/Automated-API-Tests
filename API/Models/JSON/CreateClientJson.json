@@ -1,0 +1,8 @@
+﻿{
+  "name": "{Name}",
+  "client_type": "{clientType}",
+  "date_of_birth": "{dateOfBirth}",
+  "jurisdictions": [
+    "{jurisdictions}"
+  ]
+}

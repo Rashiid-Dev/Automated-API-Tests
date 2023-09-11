@@ -1,0 +1,6 @@
+{
+  "description": "{description}",
+  "quantity": {quantity},
+  "client_id": "{clientID}",
+  "product_id": "{productID}"
+}

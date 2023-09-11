@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "4fb9310d-5fde-4278-8324-d0c4473def88",
+		"name": "Sikoa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6590101"
+	},
+	"item": [
+		{
+			"name": "Create Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"JohnSmithTest2\",\r\n  \"client_type\": \"Prospect\",\r\n  \"date_of_birth\": \"1984-09-09\",\r\n  \"jurisdictions\": [\r\n    \"uk\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sikoia-qa-interview.azurewebsites.net/v1/entities/clients",
+					"protocol": "https",
+					"host": [
+						"sikoia-qa-interview",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"v1",
+						"entities",
+						"clients"
+					]
+				},
+				"description": "Create Client"
+			},
+			"response": []
+		},
+		{
+			"name": "Promote Client",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"client_id\": \"4e41a707-feb1-4b29-80a3-ebc2795b266f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sikoia-qa-interview.azurewebsites.net/v1/entities/clients/promote-prospect",
+					"protocol": "https",
+					"host": [
+						"sikoia-qa-interview",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"v1",
+						"entities",
+						"clients",
+						"promote-prospect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sikoia-qa-interview.azurewebsites.net/v1/entities/clients/4e41a707-feb1-4b29-80a3-ebc2795b266f",
+					"protocol": "https",
+					"host": [
+						"sikoia-qa-interview",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"v1",
+						"entities",
+						"clients",
+						"4e41a707-feb1-4b29-80a3-ebc2795b266f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Office Chairs\",\r\n  \"jurisdictions\": [\r\n    \"uk\"\r\n  ],\r\n  \"price\": 1645,\r\n  \"description\": \"a pair of comfy office chairs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sikoia-qa-interview.azurewebsites.net/v1/entities/products",
+					"protocol": "https",
+					"host": [
+						"sikoia-qa-interview",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"v1",
+						"entities",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sikoia-qa-interview.azurewebsites.net/v1/entities/products/6503a3a4-b9ff-47ba-9e9e-064cd0330c19",
+					"protocol": "https",
+					"host": [
+						"sikoia-qa-interview",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"v1",
+						"entities",
+						"products",
+						"6503a3a4-b9ff-47ba-9e9e-064cd0330c19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Sale",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"Sale to John for his amazing comfy office chairs\",\r\n  \"quantity\": 1,\r\n  \"client_id\": \"4e41a707-feb1-4b29-80a3-ebc2795b266f\",\r\n  \"product_id\": \"6503a3a4-b9ff-47ba-9e9e-064cd0330c19\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sikoia-qa-interview.azurewebsites.net/v1/entities/sales",
+					"protocol": "https",
+					"host": [
+						"sikoia-qa-interview",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"v1",
+						"entities",
+						"sales"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
