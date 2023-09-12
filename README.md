@@ -38,7 +38,7 @@ This project performs automated testing on Sikoia API's
 
 #### Test Failures Explained
 
-**CreateSale** has test has failed due to the following error:
+**CreateSale** test has failed due to the following error:
 
 > You cannot associate any sale to a prospect. Please promote this prospect to client first
 
